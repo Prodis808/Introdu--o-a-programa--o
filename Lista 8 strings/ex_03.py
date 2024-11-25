@@ -18,7 +18,7 @@ def verificador_cpf(cpf):
     soma_dv1 = 0
     contador = 10
     for i in range(9):
-        soma_dv1 += int(cpf_formatado[i]) * contador    # Colocando a função int() para conseguir realizar as operações aritméticas
+        soma_dv1 += int(cpf_formatado[i]) * contador    # Colocando o tipo int para conseguir realizar as operações aritméticas
         contador -= 1
     resto_dv1 = 11 - (soma_dv1 % 11)    # Subtraindo de 11 o resto da divisao
     
@@ -31,7 +31,7 @@ def verificador_cpf(cpf):
     soma_dv2 = 0
     contador = 11    # Contador adicionou +1 pois o dv1 está incluso
     for i in range(10):    # Nesse caso o range é maior pois o dv1 está incluido
-        soma_dv2 += int(cpf_formatado[i]) * contador    # Colocando a função int() para conseguir realizar as operações aritméticas
+        soma_dv2 += int(cpf_formatado[i]) * contador    # Colocando o tipo int para conseguir realizar as operações aritméticas
         contador -= 1
     resto_dv2 = 11 - (soma_dv2 % 11)    # Subtraindo de 11 o resto da divisao
 
